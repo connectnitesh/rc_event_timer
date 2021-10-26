@@ -14,7 +14,6 @@ body{
 
 .container
 {   
-    background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
     top:0px;
