@@ -9,7 +9,7 @@
 body{
     background: url(bg.jpg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-size: cover;
 }
 
 .container
