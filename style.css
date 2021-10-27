@@ -8,8 +8,10 @@
 
 body{
     background: url(bg.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
+    height:820px;
+    overflow:hidden;
 }
 
 .container
@@ -120,21 +122,26 @@ body{
 }
 
 @media (max-width: 768px) {
-    .countdown{
-        display:flex;
-        flex-direction: column;
+    .body{
+        height:800px;
+    }
+    .countdown
+    {
+    flex-direction: column;
+    margin:0px;
     }
     .countdown div{
-        width:160px;
-        height:110px;
-        line-height: 10px;
-        font-weight:100;
+        width:120px;
+        height:130px;
+        line-height: 120px;
     }
+    
+
     .container h2 {
-        margin-top:10px;
-        margin-bottom: 20px;
-        font-weight:100;
-        width:100%
+        margin-top:20px;
+        font-size:35px;
+        width:100%;
+        line-height: 0.1em;
     }
   }
   
