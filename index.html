@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rc Event Timer</title>
+    <title>ROBOMANIA - Coming Soon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2 class="heading">Robomania </h2>
-        <h2 class="heading" id="soon">Coming Soon</h2>
+        <h2 class="heading head1" >Coming</h2>
+        <h2 class="heading head2">Soon</h2>
         <div class="countdown">
-            <div id="day">NA</div>
-            <div id="hour">NA</div>
-            <div id="minute">NA</div>
-            <div id="second">NA</div>
+            <div id="day"></div>
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
         </div>
     </div>
 
@@ -23,20 +23,20 @@
     <!--Javascript Start for timer-->
     <script type="text/javascript">
 
-    var countDate = new Date('5 Jan, 2023  00:00:00').getTime();
+    let countDate = new Date('8 Aug, 2024  00:00:00').getTime();
 
     function newYear(){
-        var now = new Date().getTime();
+        let now = new Date().getTime();
             gap =countDate - now;
-            var second = 1000;
-            var minute =second *60 ;
-            var hour = minute *60;
-            var day = hour * 24;
+            let second = 1000;
+            let minute =second *60 ;
+            let hour = minute *60;
+            let day = hour * 24;
     
-            var d = Math.floor(gap/(day));
-            var h = Math.floor((gap % (day)) /(hour));
-            var m = Math.floor((gap % (hour)) /(minute));
-            var s = Math.floor((gap % (minute)) /(second));
+            let d = Math.floor(gap/(day));
+            let h = Math.floor((gap % (day)) /(hour));
+            let m = Math.floor((gap % (hour)) /(minute));
+            let s = Math.floor((gap % (minute)) /(second));
     
             document.getElementById('day').innerText = d;
             document.getElementById('hour').innerText = h;
